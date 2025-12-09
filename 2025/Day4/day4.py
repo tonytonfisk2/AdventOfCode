@@ -1,4 +1,4 @@
-with open('./data/day4.txt', 'r', encoding='utf-8') as file:
+with open('../data/day4.txt', 'r', encoding='utf-8') as file:
     f = file.readlines()
     f = [x.strip() for x in f]
 

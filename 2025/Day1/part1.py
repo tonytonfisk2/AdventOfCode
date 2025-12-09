@@ -1,7 +1,7 @@
 password = 50
 count = 0
 
-file_path = './data/day1.txt'
+file_path = '../data/day1.txt'
 
 with open(file_path, 'r') as f:
     data = f.read().splitlines() 

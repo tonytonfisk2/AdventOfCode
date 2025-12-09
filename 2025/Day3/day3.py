@@ -1,6 +1,6 @@
 
 
-with open('./data/day3.txt', 'r') as file:
+with open('../data/day3.txt', 'r') as file:
     f = file.readlines()
     f = [x.replace("\n", "") for x in f]
 

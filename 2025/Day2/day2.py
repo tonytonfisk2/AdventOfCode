@@ -1,6 +1,6 @@
 
 
-with open('./data/day2.txt', 'r', encoding='UTF-8') as file:
+with open('../data/day2.txt', 'r', encoding='UTF-8') as file:
         data = file.read().replace('\n', '')
         ranges = data.split(',')
 
@@ -26,9 +26,9 @@ def check_sequence2(num):
 
     num = str(num)
     
-    for i in range(len(num)):
+    for i in range(1, len(num)//2):
         pattern = ""
-        if(len(num) % (i + 1) == 0 and i != len(num) - 1):
+        if(len(num) % (i + 1) == 0):
             pattern = num[:i + 1]
             ans = pattern * (len(num) // len(pattern))
             if(ans == num):
