@@ -59,6 +59,7 @@ def part2():
             edges.append([dist(p1, p2), (p1,p2)])
 
     last_p1, last_p2 = None, None
+    print(sorted(edges,reverse=True)[0])
     for idx, itm in enumerate(sorted(edges)):
         if len(all_points) == 0:
             break
